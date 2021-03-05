@@ -1,0 +1,164 @@
+.video-background {
+  background: #000;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -99;
+}
+
+.video-foreground,
+.video-background iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+#vidtop-content {
+  top: 0;
+}
+
+body {
+  margin: 0;
+}
+
+.img {
+  width: 100%;
+}
+
+.title {
+  font-family: 'Russo One', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero__title {
+  margin: 0;
+  margin-bottom: 4rem;
+}
+.hero__block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-block {
+  max-width: 200px;
+  object-fit: cover;
+}
+
+.hero__img-block {
+  margin-right: 7rem;
+}
+
+.hero__image {
+  width: 100%;
+ 
+}
+.hero__block {
+  margin-bottom: 3rem;
+}
+
+.hero ul, .promo ul {
+  list-style-type: none;
+}
+.promo ul {
+  display: flex;
+  justify-content: center;
+}
+
+.hero li, .promo li {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+}
+
+.hero li {
+  margin-bottom: 1rem;
+}
+.promo li {
+  margin-right: 1rem;
+}
+
+.promo li:last-child {
+  margin-right: 0;
+}
+
+.hero__btn, .ingredients__btn, .promo__btn {
+  text-transform: uppercase;
+  font-family: 'Oswald', sans-serif;
+  font-size: 2rem;
+  padding: 10px 30px;
+  max-width: 15rem;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+  background-color: rgb(106, 56, 110);
+  color: #ffffff;
+}
+
+.hero__btn:hover, .ingredients__btn:hover {
+  background-color: rgb(161, 122, 161);
+}
+
+.ingredients, .promo {
+  padding: 80px 0;
+  background: linear-gradient(to top, #c99dfd, #faeafe);
+}
+
+.ingredients__container {
+  display: flex;
+  justify-content: space-around;
+  margin: auto;
+  max-width: 50rem;
+}
+.ingredients__col:nth-child(2) {
+  align-self: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+}
+.ingredients__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.ingredients__img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+
+.ingredients__image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+}
+
+.ingredients__image--big {
+  width: 100%
+}
+
+.ingredients__img--big {
+  max-width: 200px;
+  margin-bottom: 2rem;
+}
+
+.promo__image-block {
+  max-width: 500px;
+  margin: auto;
+  margin-bottom: 2rem;
+}
