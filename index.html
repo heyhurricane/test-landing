@@ -82,7 +82,27 @@
 
   <div class="feedbacks">
     <div class="container feedbacks__container">
-
+      <div class="slider feedbacks__slider">
+        <div class="slide feedbacks__slide slide--active">
+          <img src="img/person1.jpg" alt="" class="person-img feedbacks__person-img">
+          <span class="person-name feedbacks__person-name">Иван Иванов</span>
+          <p class="feedback-text feedbacks__feedback-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Первую рот букв которой путь которое всемогущая свой маленький назад безорфографичный? Заманивший правилами вопроса он? Своих, жизни. Мир текст переулка дорогу заглавных бросил даже маленький парадигматическая однажды, он щеке, переписывается города, напоивший составитель осталось оксмокс? Великий он моей переулка текста!</p>
+        </div>
+        <!-- /.slide feedbacks__slide -->
+        <div class="slide feedbacks__slide">
+          <img src="img/person2.jpg" alt="" class="person-img feedbacks__person-img">
+          <span class="person-name feedbacks__person-name">Пётр Петров</span>
+          <p class="feedback-text feedbacks__feedback-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Первую рот букв которой путь которое всемогущая свой маленький назад безорфографичный? Заманивший правилами вопроса он? Своих, жизни. Мир текст переулка дорогу заглавных бросил даже маленький парадигматическая однажды, он щеке, переписывается города, напоивший составитель осталось оксмокс? Великий он моей переулка текста!</p>
+        </div>
+        <!-- /.slide feedbacks__slide -->
+        <div class="slide feedbacks__slide">
+          <img src="img/person3.jpg" alt="" class="person-img feedbacks__person-img">
+          <span class="person-name feedbacks__person-name">Сидр Сидоров</span>
+          <p class="feedback-text feedbacks__feedback-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Первую рот букв которой путь которое всемогущая свой маленький назад безорфографичный? Заманивший правилами вопроса он? Своих, жизни. Мир текст переулка дорогу заглавных бросил даже маленький парадигматическая однажды, он щеке, переписывается города, напоивший составитель осталось оксмокс? Великий он моей переулка текста!</p>  
+        </div>
+        <!-- /.slide feedbacks__slide -->
+      </div>
+      <!-- /.slider -->
     </div>
     <!-- /.container feedbacks__container -->
   </div>
@@ -104,10 +124,52 @@
     <!-- /.container promo__container -->
   </div>
   <!-- /.promo -->
+
+  <div class="order">
+    <div class="container order__container">
+      <h2 class="title order__title">LevelUp</h2>
+      <div class="timer order__timer" id="timer">
+        <span class="timer-hours" id="timer-hours">00</span>
+        <span>:</span>
+        <span class="timer-minutes" id="timer-minutes">30</span>
+        <span>:</span>
+        <span class="timer-seconds" id="timer-seconds">00</span>
+      </div>
+      <!-- /.timer-numbers -->
+      <div class="info order__info">
+        <div class="order__block">
+          <img src="img/prod.png" alt="" class="image order__image">
+          <div class="prices older__prices">
+            <span class="price order__price price--old">699 руб</span>
+            <span class="price order__price price--new">499 руб</span>
+          </div>
+          <!-- /.prices older__prices -->
+        </div>
+        <!-- /.order__block -->
+        <div class="order__block">
+          <h3 class="order__subtitle">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
+          <form action="" class="form order__form">
+            <label for="name" class="label order__label">Имя</label>
+            <input type="text" class="input order__input" id="name" autocomplete="off" required> 
+            <label class="help">Иван Иванов</label> 
+            <label for="phone" class="label order__label">Телефон</label>
+            <input type="tel" class="input order__input" id="phone" autocomplete="off" maxlength="11" required> 
+            <label class="help">89995555555</label>
+            <button class="btn order__btn">Заказать</button>
+          </form>
+        </div>
+        <!-- /.order__block -->
+      </div>
+      <!-- /.info order__info -->
+    </div>
+    <!-- /.container order__container -->
+  </div>
+  <!-- /.order -->
 <!-- <div class="video-background">
     <div class="video-foreground">
         <iframe src="https://www.youtube.com/embed/gXXHBVgW5F0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     </div>
 </div> -->
+<script src="main.js"></script>
 </body>
 </html>

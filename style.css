@@ -93,7 +93,7 @@ body {
   margin-right: 0;
 }
 
-.hero__btn, .ingredients__btn, .promo__btn {
+.btn {
   text-transform: uppercase;
   font-family: 'Oswald', sans-serif;
   font-size: 2rem;
@@ -106,15 +106,21 @@ body {
   color: #ffffff;
 }
 
-.hero__btn:hover, .ingredients__btn:hover {
+.btn:hover {
   background-color: rgb(161, 122, 161);
 }
 
-.ingredients, .promo {
+.ingredients,
+.promo {
   padding: 80px 0;
   background: linear-gradient(to top, #c99dfd, #faeafe);
 }
 
+.feedbacks,
+.order {
+  padding: 80px 0;
+  background: linear-gradient(to top, #faeafe, #c99dfd);
+}
 .ingredients__container {
   display: flex;
   justify-content: space-around;
@@ -161,4 +167,138 @@ body {
   max-width: 500px;
   margin: auto;
   margin-bottom: 2rem;
+}
+
+.promo__container {
+  display: flex;
+  flex-direction: column;
+}
+
+
+.timer {
+  font-family: 'Russo One', sans-serif;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+.order__timer {
+  margin-bottom: 3rem;
+}
+
+.order__title {
+  margin: 0;
+  margin-bottom: 2rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.order__block {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__block:nth-child(1) {
+  margin-right: 4rem;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.order__image {
+  max-width: 220px;
+  margin-bottom: 1.5rem;
+}
+
+.price--old {
+  font-family: 'Russo One', sans-serif;
+  font-size: 1.8rem;
+  text-decoration: line-through;
+}
+
+.price--new {
+  font-family: 'Russo One', sans-serif;
+  font-size: 2rem;
+  color: #fd39bc;
+  animation-duration: 3s;
+  animation-name: resize;
+  animation-iteration-count: 2
+}
+
+@keyframes resize {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.order__price:nth-child(1) {
+  margin-right: 1rem;
+}
+
+.order__label {
+  margin-bottom: 0.3rem;
+}
+
+.order__input {
+  margin-bottom: 0.8rem;
+  padding: 5px 0 5px 5px;
+  /* position: relative; */
+}
+
+.order__subtitle {
+  margin: 0;
+  margin-bottom: 3rem;
+}
+
+.oder__btn {
+  margin-top: 2rem;
+}
+
+.help {
+  display: none;
+  /* position: absolute; */
+}
+
+.input:focus + .help,
+.input:valid + .help {
+  display: flex;
+  font-size: 0.7rem;
+  transform: translate(84%, -2.5rem);
+}
+
+.person-img {
+  max-width: 100px;
+  border-radius: 50%;
+}
+
+.person-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 1.2rem;
+
+}
+
+.feedbacks__person-img {
+  margin-bottom: 1rem;
+}
+
+.slide {
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 40rem;
+  margin: auto;
+  display: none;
+}
+
+.slide--active {
+  display: flex;
 }
