@@ -7,10 +7,11 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Russo+One&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
   <title>LevelUp</title>
 </head>
 <body>
-  <div class="hero">
+  <div class="hero" data-vide-bg="video/ocean"> 
     <h2 class="title hero__title">LevelUp</h2>
     <div class="block hero__block">
       <div class="img-block hero__img-block">
@@ -27,7 +28,7 @@
       <!-- /.text-block hero__text-block -->
     </div>
     <!-- /.block -->
-    <button class="btn hero__btn">Заказать</button>
+    <a href="#toorder" class="btn hero__btn">Заказать</a>
   </div>
   <!-- /.hero -->
   <div class="ingredients">
@@ -54,7 +55,7 @@
         <div class="img ingredients__img--big">
           <img src="img/prod.png" alt="" class="image ingredients__image--big">
         </div>
-        <button class="btn ingredients__btn">Заказать</button>
+        <a href="#toorder" class="btn ingredients__btn">Заказать</a>
       </div>
       <!-- /.col ingredients__col -->
       <div class="col ingredients__col">
@@ -101,6 +102,8 @@
           <p class="feedback-text feedbacks__feedback-text">Далеко-далеко, за словесными горами в стране гласных и согласных живут рыбные тексты. Первую рот букв которой путь которое всемогущая свой маленький назад безорфографичный? Заманивший правилами вопроса он? Своих, жизни. Мир текст переулка дорогу заглавных бросил даже маленький парадигматическая однажды, он щеке, переписывается города, напоивший составитель осталось оксмокс? Великий он моей переулка текста!</p>  
         </div>
         <!-- /.slide feedbacks__slide -->
+        <button class="slider-btn slider-btn--prev"></button>
+        <button class="slider-btn slider-btn--next"></button>
       </div>
       <!-- /.slider -->
     </div>
@@ -119,7 +122,7 @@
         <li>Характеристика 2</li>
         <li>Характеристика 3</li>
       </ul>
-      <button class="btn promo__btn">Заказать</button>
+      <a href="#toorder" class="btn promo__btn">Заказать</a>
     </div>
     <!-- /.container promo__container -->
   </div>
@@ -146,9 +149,9 @@
           <!-- /.prices older__prices -->
         </div>
         <!-- /.order__block -->
-        <div class="order__block">
+        <div class="order__block" id="toorder">
           <h3 class="order__subtitle">Оставьте заявку, и наш менеджер свяжется с Вами</h3>
-          <form action="" class="form order__form">
+          <form class="form order__form">
             <label for="name" class="label order__label">Имя</label>
             <input type="text" class="input order__input" id="name" autocomplete="off" required> 
             <label class="help">Иван Иванов</label> 
@@ -165,11 +168,8 @@
     <!-- /.container order__container -->
   </div>
   <!-- /.order -->
-<!-- <div class="video-background">
-    <div class="video-foreground">
-        <iframe src="https://www.youtube.com/embed/gXXHBVgW5F0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    </div>
-</div> -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="jquery.vide.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

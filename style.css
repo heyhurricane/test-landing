@@ -41,10 +41,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  /* background: url(/video/ocean.jpg) no-repeat center / cover; */
 }
 .hero__title {
   margin: 0;
   margin-bottom: 4rem;
+  color: white;
 }
 .hero__block {
   display: flex;
@@ -71,6 +73,7 @@ body {
 
 .hero ul, .promo ul {
   list-style-type: none;
+  padding: 0;
 }
 .promo ul {
   display: flex;
@@ -84,6 +87,7 @@ body {
 
 .hero li {
   margin-bottom: 1rem;
+  color: white;
 }
 .promo li {
   margin-right: 1rem;
@@ -104,6 +108,7 @@ body {
   border: none;
   background-color: rgb(106, 56, 110);
   color: #ffffff;
+  text-decoration: none;
 }
 
 .btn:hover {
@@ -132,6 +137,7 @@ body {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
 }
 .ingredients__block {
   display: flex;
@@ -163,6 +169,10 @@ body {
   margin-bottom: 2rem;
 }
 
+.ingredients__name {
+  font-family: 'Oswald', sans-serif;
+
+}
 .promo__image-block {
   max-width: 500px;
   margin: auto;
@@ -290,15 +300,43 @@ body {
   margin-bottom: 1rem;
 }
 
+.slider {
+  position: relative;
+  max-width: 40rem;
+  margin: auto;
+}
+
 .slide {
   flex-direction: column;
   align-items: center;
-  padding: 1rem 2rem;
-  max-width: 40rem;
-  margin: auto;
+  width: 100%;
   display: none;
 }
 
 .slide--active {
   display: flex;
+}
+
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 45px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-btn--prev {
+  left: -10% ;
+  background: url(img/arrow-prev.svg) no-repeat center;
+} 
+  
+.slider-btn--next {
+  right: -10%;
+  background: url(img/arrow-next.svg) no-repeat center;
+}
+
+.feedback-text {
+  text-align: center;
 }

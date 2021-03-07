@@ -1,0 +1,123 @@
+@media screen and (max-width: 992px) {
+  .img-block {
+    max-width: 150px;
+  }
+  .hero li, .promo li {
+    font-size: 1.5rem;
+  }
+  .hero {
+    height: 80vh;
+  }
+  .ingredients__img--big {
+    max-width: 150px;
+  }
+  .ingredients__image {
+    width: 100px;
+    height: 100px;
+  }
+  .slider {
+    max-width: 75%;
+  }
+  .order__image {
+    max-width: 150px;
+  }
+  .info {
+    flex-direction: column;
+  }
+  .order__block:nth-child(1) {
+    margin-right: 0;
+    margin-bottom: 2rem;
+  }
+  .order__subtitle {
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .promo__image-block {
+    max-width: 300px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .hero__img-block {
+    margin-right: 0;
+  }
+  .promo ul {
+    flex-direction: column;
+    align-items: center;
+  }
+  .promo li {
+    margin-right: 0;
+  }
+  .hero__block {
+    flex-direction: column;
+  }
+  .title {
+    font-size: 3rem;
+  }
+  .timer {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .ingredients__img--big {
+    max-width: 100px;
+  }
+  .ingredients__image {
+    width: 80px;
+    height: 80px;
+  }
+  .btn {
+    font-size: 1rem;
+    max-width: 8rem;
+  }
+  .order__block:nth-child(2) {
+    max-width: 90%;
+    margin: auto;
+  }
+  .order__subtitle {
+    text-align: center;
+  }
+  .feedbacks,
+  .order, .ingredients, .promo {
+    padding: 40px 0;
+  }
+  .hero__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .input:focus+.help,
+  .input:valid+.help {
+    transform: translate(80%, -2.5rem);
+  }
+}
+
+
+@media screen and (max-width: 375px) {
+  .slider {
+    max-width: 80%;
+  }
+  .hero {
+    height: 100vh;
+  }
+  .input:focus+.help,
+  .input:valid+.help {
+    transform: translate(75%, -2.5rem);
+  }
+}
+
+@media screen and (max-height: 600px) {
+  .hero {
+    height: 140vh;
+  }
+  .hero__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+}
+@media screen and (max-height: 400px) {
+  .hero {
+    height: 200vh;
+  }
+}
